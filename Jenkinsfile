@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Create Docker Image') {
             steps {
-                sh label: '', script: 'docker build -t srinathharsha/devopsinaction:1.0 --build-arg downloadLink=http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.57.tar.gz --build-arg tomcatVersion=8.5.57 .'
+                sh label: '', script: 'docker build -t sudha-k/devopsinaction:1.0 --build-arg downloadLink=http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.57.tar.gz --build-arg tomcatVersion=8.5.57 .'
             }
         }
         stage('Scan App Image') {
